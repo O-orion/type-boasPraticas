@@ -26,8 +26,6 @@ export class NegociacaoController {
         /*
             Zé, você já viu isso?
         */
-
-            const t1 = performance.now()
         const negociacao = Negociacao.criaDe(
             this.inputData.value, 
             this.inputQuantidade.value,
@@ -44,8 +42,6 @@ export class NegociacaoController {
         this.limparFormulario();
         this.atualizaView();
 
-        const t2 = performance.now()
-        console.log(`Tempo de exução do método ADCIONA ${(t2 - t1)/1000} segundos!`)
 
     }
 
